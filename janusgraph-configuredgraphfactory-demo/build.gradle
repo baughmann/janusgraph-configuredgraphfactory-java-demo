@@ -11,15 +11,8 @@ repositories {
 }
 
 dependencies {
-    def janusgraphVersion = '0.6.2'
-    implementation 'org.janusgraph:janusgraph-core:' + janusgraphVersion
-    implementation 'org.janusgraph:janusgraph-driver:' + janusgraphVersion
-    implementation 'org.janusgraph:janusgraph-cql:' + janusgraphVersion
-    implementation 'org.janusgraph:janusgraph-es:' + janusgraphVersion
     def gremlinVersion = '3.5.4'
-    implementation 'org.apache.tinkerpop:gremlin-server:' + gremlinVersion
-    // for generating temp db IDs
-    implementation 'com.benasher44:uuid:0.6.0'
+    implementation "org.apache.tinkerpop:gremlin-driver:$gremlinVersion"
 }
 
 
